@@ -1,0 +1,25 @@
+<div class="col-md-4 mb_20">
+   <div class="card_main">
+      <div class="slider_img">
+	       {% if post.get_thumbnail %}
+				<img src="{{post.thumbnail.src}}" />
+			{% endif %}
+      </div>
+      <div class="slider_description_main">
+         <span class="postCardTag postCardTag_slider">
+         <span></span>
+ 			#Computer
+        </span>
+         <a href="{{post.link}}" class="title_slider">
+            <h3 class="title_slider">{{post.title}}</h3>
+         </a>
+         <p class="description_slider">
+             {{ post.content }}
+         </p>
+         <br>
+         <div class="date_time_container date_time_slider">
+            <span class="date fs_14">{{ post.date }}</span>
+         </div>
+      </div>
+   </div>
+</div>

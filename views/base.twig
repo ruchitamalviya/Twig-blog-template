@@ -1,0 +1,185 @@
+{% block head %}
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- font-awesome css-->
+      {{ function('wp_head') }}
+   </head>
+   <body>
+      <!--This code is property of Conor McNamara-->
+      <!--https://codepen.io/conorjmcnamara/-->
+      <section class="top_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-lg-7 align-self-center">
+                  <p class="top_title">Tips to run your business smarter. Delivered to you monthly.</p>
+               </div>
+               <div class="col-md-6 col-lg-5">
+                  <form action="">
+                     <div class="email_main_top">
+                        <div class="header_top_email">
+                           <input id="name1" class="input" type="text" pattern=".+" required />
+                           <label class="label" for="name1">Email address</label>
+                        </div>
+                        <input type="submit" name="Subscribe" value="Subscribe" class="btn_subscribe_top">
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="header_section">
+         <div class="container-fluid w_1366 ">
+            <header>
+               <nav class="navbar navbar-expand-xl p-0 my-1 ">
+                  <div class="logo">
+                      {{function('get_custom_logo')}} 
+                     </a>
+                  </div>
+                  <button class="navbar-toggler btn_menu_toggle menu-toggle" id="menu-toggle" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                        <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                        <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+                  </button>
+                  <div class="row w-100">
+                     <div class="col-xl-9">
+                        <div class="collapse navbar-collapse mobile_height" id="navbarTogglerDemo02">
+                           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                              <li class="nav-item ">
+                                 <a class="nav-link header_menu_link active_link " href="#">Home</span></a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link header_menu_link" href="#">About Us</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link header_menu_link" href="#">Contact Us</a>
+                              </li>
+                              
+                           </ul>
+                           <div class="mobile_search">
+                              <div class="search_box_main">
+                                 <button class="search_btn" type="button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                 <div class="search_input">
+                                    <input type="search" name="search">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="social_media_icon">
+                              <ul class="media_icon_mobile">
+                                 <li>
+                                    <a href=""><img src="img/facebook.svg" alt=""> </a>
+                                 </li>
+                                 <li>
+                                    <a href=""><img src="img/twitter.svg" alt=""> </a>
+                                 </li>
+                                 <li>
+                                    <a href=""><img src="img/youtube.svg" alt=""> </a>
+                                 </li>
+                                 <li>
+                                    <a href=""><img src="img/linkedin.svg" alt=""> </a>
+                                 </li>
+                                 <li>
+                                    <a href=""><img src="img/google.svg" alt=""> </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="google_play">
+                              <a href=""> Google play</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3">
+                        <div class="desktop_search">
+                           <div class="search_box_main">
+                              <button class="search_btn" type="button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                              <div class="search_input">
+                                 <input type="search" name="search"> 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </nav>
+            </header>
+         </div>
+      </section>
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    {% block footer %}
+        <footer class="footer_main">
+         <div class="footermain block remove-bottom">
+            <div data-velocity="-.1" class="parallax no-parallax scrolly-invisible" style="background-position: 50% -41.1531px;"></div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="desc_main_footer">
+                        <h3 class="footer-title">CAT AND PILLAR<br></h3>
+                        <div class="footer_desc">
+                           <p>Innovative Professional Trademark Services<br></p>
+                           <ul>
+                              <li><a href=""><i class="la la-facebook"></i></a></li>
+                              <li><a href=""><i class="la la-linkedin"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="link_main_footer">
+                        <h3 class="footer-title">SITEMAP</h3>
+                        <div class="link_footer">
+                           <a href="">What is a Trademark?</a>
+                           <a href="">Who We Are</a>
+                           <a href="">Trademark Application</a>
+                           <a href="">Trademark Renewal</a>
+                           <a href="">Madrid Protocol</a>
+                           <a href="">Fee Schedule</a>
+                           <a href="">Things to Note</a>
+                           <a href="">Partner Us</a>
+                           <a href="">Contact Us</a>
+                           <a href="">Terms of Use and Privacy Policy</a>               
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="contact_main_footer">
+                        <h3 class="footer-title">CONTACT INFORMATION<br></h3>
+                        <div class="contact-footer">
+                           <ul>
+                              <li>
+                                 <i class="la la-map"></i>
+                                 <span>Address</span>
+                                 <span>9 Tai Seng Link, Singapore 534053</span>
+                              </li>
+                              <li>
+                                 <i class="la la-envelope">
+                                 </i><span>Email</span><span>admin@catandpillar.com</span>
+                              </li>
+                              <li>
+                                 <i class="la la-whatsapp"></i>
+                                 <span>WhatsApp</span>
+                                 <div class="link-whatsapp">
+                                    <a href="">Click to Chat</a>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bottom-line">
+               <span>Copyright © 2021. All Rights Reserved</span>
+            </div>
+         </div>
+         {{ function('wp_footer') }}     
+      </footer>
+    {% endblock %}
