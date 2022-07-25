@@ -4,9 +4,12 @@
 		<div class="container-fluid w_1366">
 			<div class="row">
 			{% for post in posts %}
-				{% include 'all-posts.twig' %}
+				{% include 'partial/all-posts.twig' %}
 			{% endfor %}
 			</div>
 		</div>
 	</section>
+	 <div class="container-fluid w_1366">
+      <button class="btn_see_more" type="button">{{ _e('See more posts','etstwig') }}</button>
+   </div>
 {% endblock %}

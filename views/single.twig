@@ -11,19 +11,23 @@
                   <span>{{ post.author.name }}</span>
                </div>
                <div class="blog_time_date_main">
-                  <span class="blog_time">9 min read</span>
+                  <span class="blog_time">{{ _e('9 min read','etstwig') }}</span>
                   <span class="blog_date">{{ post.date }}</span>
                </div>
-               <div class="blog_e-commerce">
-                  <span class="icon">#</span>
-                  <span class="text-e-commerce">E-commerce</span>
-               </div>
+                {% if post.categories %}
+                 <div class="blog_e-commerce">
+                    <span class="icon">#</span>
+                    <span class="text-e-commerce">{{ post.categories|join(', ') }}</span>
+                 </div>
+                {% endif %}
             </div>
             <h1{{ post.title }}</h1>
          </div>
-         <div class="blog_deails_img_container">
-            <img src="{{ post.thumbnail }}" alt="">
-         </div>
+          {% if post.thumbnail.src %}
+           <div class="blog_deails_img_container">
+              <img src="{{ post.thumbnail }}" alt="">
+           </div>
+         {% endif %}
          <div class="blog_details_para_main w_610">
             <div class="paragraph_container">
                {{ post.content }}
@@ -34,13 +38,6 @@
                <i class="fa-brands fa-twitter"></i>
                <i class="fa-brands fa-linkedin-in"></i>
                <i class="fa-brands fa-whatsapp"></i>
-            </div>
-            <div class="Tags_main">
-               <b class="tags">Tags:</b>
-               <div class="blog_e-commerce">
-                  <span class="icon">#</span>
-                  <span class="text-e-commerce">E-commerce</span>
-               </div>
             </div>
         </div>
     </section>

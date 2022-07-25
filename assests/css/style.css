@@ -179,6 +179,10 @@ section.header_section {
 .header_section .logo:hover {
 	opacity: 0.6;
 }
+.header_section .logo img{
+	width:70px;
+	height: 70px;
+}
 
 .header_section .header_menu_link {
 	color: #000;

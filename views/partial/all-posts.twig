@@ -1,4 +1,4 @@
-<div class="col-md-4 mb_20">
+<div class="col-md-4 mb_20 mb-5">
    <div class="card_main">
       <div class="slider_img">
 	       {% if post.get_thumbnail %}
@@ -6,13 +6,15 @@
 			{% endif %}
       </div>
       <div class="slider_description_main">
-         <span class="postCardTag postCardTag_slider">
-         <span></span>
- 			#Computer
-        </span>
-         <a href="{{post.link}}" class="title_slider">
+        {% if post.categories %}
+          <span class="postCardTag postCardTag_slider">
+          <span></span>
+   			{{ post.categories|join(', ') }}
+          </span>
+        {% endif %}
+          <a href="{{post.link}}" class="title_slider">
             <h3 class="title_slider">{{post.title}}</h3>
-         </a>
+          </a>
          <p class="description_slider">
              {{ post.content }}
          </p>
